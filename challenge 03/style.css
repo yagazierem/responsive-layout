@@ -1,0 +1,34 @@
+.container{
+    width: 100%;
+    height: 700px;
+    max-width: 1000px;
+    background-color: #e5e5e5;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+}
+.rect-1{
+    width: 80%;
+    height: 50%;
+    background-color: #23424a;
+    color: white;
+    margin: 0 auto;
+}
+.intro{
+    width: 50%;
+    font-family: Inter, sans-serif;
+    padding: 50px 0 50px 50px;
+
+}
+button{
+    background-color: #38cfd9;
+    color: black;
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.rect-2{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    height: 25%;
+}
