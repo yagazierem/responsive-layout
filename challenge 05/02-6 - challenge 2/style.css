@@ -1,23 +1,16 @@
 /* 
 ////// For this challenge ///////
 
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
+- All text is in the text.md file
 
 // Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
 
-   */
+*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -28,48 +21,42 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
 }
+.main{
+    max-width: 1000px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
 
 h1 {
     font-size: 3rem;
-}
-
-h2{
-    text-align: center;
-    color: white;
-
-}
-.hesh{
-    color: #87629A;
+    margin-top: 0;
 }
 
 .container {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-   
 }
 
 .row {
     /* display: flex => flex container */
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
     
     /* can't use yet */
     /* gap: 100px; */
 }
 
-.brow{
-   padding: 100px;
-   background-color: #136C72;
-   display: flex;
-   gap: 50px;
-   color: white;
-
-}
-
 .col {
     /* these are now flex items */
     width: 100%;
+}
+
+.col + .col {
+    margin-left: 30px;
 }
 
 .hero {
@@ -78,8 +65,13 @@ h2{
     color: #FFF;
 }
 
-.hero__text {
-    width: 60%;
+.hero__text { 
+    width: 62%;
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
 }
 
 .hero p {
@@ -100,4 +92,26 @@ h2{
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+.text-div{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.quality-div{
+    width: 50%;
+    margin-left: 30px;
+}
+.blue{
+    color: #136C72;
+}
+.cheap-col{
+    width: 25%;
+    background-color: #136C72;
+    margin-left: 50px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
 }
